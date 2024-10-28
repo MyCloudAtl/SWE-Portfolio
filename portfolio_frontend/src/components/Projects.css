@@ -41,8 +41,8 @@ button.linkbtn{
     align-items: center;
 }
 .ProjectsBTN {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     color: #F0FFFF;
     border: none; 
     cursor: pointer;

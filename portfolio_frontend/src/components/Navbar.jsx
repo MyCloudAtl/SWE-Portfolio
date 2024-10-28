@@ -5,7 +5,6 @@ import Contact from './Contact'
 const Navbar = ({ onContactClick }) => {
 
     return (
-        <div className="navbar">
         <div className="linkbar">
           <Link to="/">
             <button className="linkbtn">Home</button>
@@ -24,7 +23,6 @@ const Navbar = ({ onContactClick }) => {
           </Link>
           <button className="linkbtn" onClick={onContactClick}>Contact</button>
         </div>
-      </div>
     )
   }
 export default Navbar  

@@ -40,3 +40,83 @@
 .read-the-docs {
   color: #888;
 }
+body{
+  background-color: #FFFFF0;
+}
+h1{
+  color: #6495ED;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+h2{
+  /* color: #F06161; */
+  text-shadow: #F06161 1px 0 10px;
+  margin-top: 5px;
+  margin-bottom: 500px;
+}
+.Header{
+  font-size: xxx-large;
+  font-family: "Inspiration", cursive;
+}
+.Title{
+  font-size: xx-large;
+  font-family: "Kaushan Script", cursive;
+  margin-bottom: 450px;
+}
+.linkbar{
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  font-family: "Kaushan Script", cursive;
+}
+.linkbtn {
+  color: #888;
+  margin-left: 10px;
+  background-color: #6495ED;
+}
+.linkbtn {
+  cursor:pointer;
+    position:relative;
+    padding:10px 20px;
+    background:white;
+    font-size:28px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    transition:all 1s;
+    &:after,&:before{
+      content:" ";
+      width:10px;
+      height:10px;
+      position:absolute;
+      border:0px solid #fff;
+      transition:all 1s;
+      }
+    &:after{
+      top:-1px;
+      left:-1px;
+      border-top:5px solid #f39393;
+      border-left:5px solid #6495ED;
+    }
+    &:before{
+      bottom:-1px;
+      right:-1px;
+      border-bottom:5px solid #f39393;
+      border-right:5px solid #6495ED;
+    }
+    &:hover{
+      border-top-right-radius:0px;
+    border-bottom-left-radius:0px;
+      /* // background:rgba(0,0,0,.5);
+      // color:white; */
+      &:before,&:after{
+        
+        width:100%;
+        height:100%;
+        /* // border-color:white; */
+      }
+    }
+  }
+
+
+
+
