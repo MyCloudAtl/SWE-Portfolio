@@ -1,0 +1,54 @@
+.Resume {
+    color:black;
+    background-color: #88b5bf3a;
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: left;
+}
+.font-weight-normal {
+    font-weight: normal;
+    position: absolute;
+    right: 60px;
+}
+.location-font-weight{
+    font-weight: normal;
+}
+.ResumeH1{
+    color: black;
+    font-weight: normal;
+    text-align: center;
+}
+.ResumeH2 {
+    margin-bottom: 3px;
+    color: black;
+    text-shadow: none;
+}
+.ResumeH3{
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+.ResumeH4{
+    padding-left: 10px;
+}
+.Resume-header{
+    text-align: center;
+}
+.Contact-box{
+    border: 3px solid #88B5BF;
+    padding-left: 10px;
+}
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+.HomeBTN{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Resume-item {
+    border: 3px solid #F8F6F4;
+    margin-bottom: 5px;
+}
