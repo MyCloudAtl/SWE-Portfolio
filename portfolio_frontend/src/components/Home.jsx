@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 import Navbar from './Navbar'
 import Contact from './Contact'
 import MyPic from '../assets/MyPic.jpeg'

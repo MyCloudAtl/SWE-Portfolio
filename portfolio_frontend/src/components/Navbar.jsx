@@ -1,28 +1,87 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import { Link } from "react-router-dom"
+import { motion } from "framer-motion";
 import Contact from './Contact'
+import './SlideTabs.css';
 
 const Navbar = ({ onContactClick }) => {
+  return (
+    <div className="slide-tabs-container">
+      <SlideTabs onContactClick={onContactClick}/>
+    </div>
+  );
+};
+
+const SlideTabs = ({ onContactClick }) => {
+  const [position, setPosition] = useState({
+    left: 0,
+    width: 0,
+    opacity: 0,
+  });
 
     return (
-        <div className="linkbar">
-          <Link to="/">
-            <button className="linkbtn">Home</button>
-          </Link>
-          <Link to="/Technology">
-            <button className="linkbtn">Technology</button>
-          </Link>
-          <Link to="/Projects">
-            <button className="linkbtn">Projects</button>
-          </Link>
-          <Link to="/Resume">
-            <button className="linkbtn">Resume</button>
-          </Link>
-          <Link to="/Challenger">
-            <button className="linkbtn">Challenger</button>
-          </Link>
-          <button className="linkbtn" onClick={onContactClick}>Contact</button>
-        </div>
-    )
-  }
+      <ul
+      onMouseLeave={() => {
+        setPosition((pv) => ({
+          ...pv,
+          opacity: 0,
+        }));
+      }}
+      className="slide-tabs"
+    >
+      <Tab setPosition={setPosition} to="/">Home</Tab>
+      <Tab setPosition={setPosition} to="/Technology">Technology</Tab>
+      <Tab setPosition={setPosition} to="/Projects">Projects</Tab>
+      <Tab setPosition={setPosition} to="/Resume">Resume</Tab>
+      <Tab setPosition={setPosition} to="/Challenger">Challenger</Tab>
+      <Tab setPosition={setPosition} onClick={onContactClick} isButton>Contact</Tab>
+      <Cursor position={position} />
+    </ul>
+  );
+};
+  
+  const Tab = ({ children, setPosition, to, onClick, isButton }) => {
+    const ref = useRef(null);
+  
+    return (
+      <li
+        ref={ref}
+        onMouseEnter={() => {
+          if (!ref?.current) return;
+  
+          const { width } = ref.current.getBoundingClientRect();
+  
+          setPosition({
+            left: ref.current.offsetLeft,
+            width,
+            opacity: 1,
+          });
+        }}
+        className="tab"
+      >
+        {isButton ? (
+        <button onClick={onClick}>
+          {children}
+        </button>
+      ) : (
+        <Link to={to}>
+          {children}
+        </Link>
+        )}
+      </li>
+    );
+  };
+  
+  const Cursor = ({ position }) => {
+    return (
+      <motion.li
+        animate={{
+          left: position.left,
+          width: position.width,
+          opacity: position.opacity,
+        }}
+        className="cursor"
+      />
+    );
+  };
 export default Navbar  
