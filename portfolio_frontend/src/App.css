@@ -47,11 +47,13 @@ h1{
   color: #6495ED;
   margin-top: 0px;
   margin-bottom: 5px;
+  font-family: "Parisienne", cursive;
 }
 h2{
   /* color: #F06161; */
   text-shadow: #F06161 1px 0 10px;
   margin-top: 5px;
+  font-family: "Great Vibes", serif;
 }
 .Header{
   font-size: xxx-large;
@@ -68,6 +70,7 @@ h2{
   font-size: large;
   font-family: "Kaushan Script", cursive;
 }
+
 
   
 

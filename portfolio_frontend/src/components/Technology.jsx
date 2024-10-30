@@ -1,6 +1,9 @@
+import "./Technology.css"
+
 const Technology = () => {
 
     return (
+      
       <div className="technologies">
           <h1>Technologies</h1>
           <h2>Front-End</h2>
@@ -18,7 +21,6 @@ const Technology = () => {
             List tools and workflows such as Git, GitHub, Trello, Slack, and Figma. Provide a brief description of how these tools support your development process (e.g., version control, team collaboration, prototyping).</li>
           </ul>
           <p>Front-End Page:
-
 Projects that highlight your front-end development (e.g., responsive designs, React components, and API integration using Axios).
 Brief descriptions of your use of Responsive Design, Flexbox, Grid, and Bootstrap.
         </p>
