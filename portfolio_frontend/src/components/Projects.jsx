@@ -12,7 +12,7 @@ import mainxatl from '/Users/meganmashburn/code/ga/labs/my-portfolio/portfolio/s
 import saas from '/Users/meganmashburn/code/ga/labs/my-portfolio/portfolio/src/assets/Saas.png'
 
 const Projects = () => {
-
+    document.documentElement.style.setProperty('#root', '#F7E9D7');
     return (
         <div className="Projects">
           <header className="Projects-header">

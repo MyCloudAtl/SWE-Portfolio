@@ -2,9 +2,14 @@
     color:black;
     background-color: #88b5bf3a;
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 10px;
     margin: 0 auto;
     text-align: left;
+    font-size: 10pt;
+
+    p {
+        margin-bottom: 5px;
+    }
 }
 .font-weight-normal {
     font-weight: normal;
@@ -16,39 +21,69 @@
 }
 .ResumeH1{
     color: black;
+    font-size: 20pt;
     font-weight: normal;
     text-align: center;
 }
 .ResumeH2 {
+    margin: 2px 0;
+    font-size: 17pt;
     margin-bottom: 3px;
     color: black;
     text-shadow: none;
 }
 .ResumeH3{
+    margin: 2px 0;
+    font-size: 15pt;
     margin-bottom: 5px;
     padding-left: 10px;
 }
 .ResumeH4{
+    margin: 2px 0;
+    font-size: 13pt;
     padding-left: 10px;
 }
 .Resume-header{
     text-align: center;
 }
 .Contact-box{
-    border: 3px solid #88B5BF;
+    border: 2px solid #88B5BF;
     padding-left: 10px;
+    padding: 5px;
 }
 p {
     margin-top: 5px;
     margin-bottom: 5px;
     padding-left: 10px;
 }
-.HomeBTN{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
 .Resume-item {
-    border: 3px solid #F8F6F4;
-    margin-bottom: 5px;
+    border: 2px solid #F8F6F4;
+    margin-bottom: 3px;
+
+    p {
+        margin-bottom: 5px;
+    }
 }
+@media print {
+    .Resume {
+        width: 100%;
+        font-size: clamp(0.5rem, 1.0vw, 0.5rem);
+        margin: 0;
+        padding: 0;
+    }
+    .print-button {
+        display: none;
+    }
+    .slide-tabs-container {
+        display: none;
+    }
+    .root{
+        display: none;
+    }
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+

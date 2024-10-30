@@ -6,7 +6,13 @@
     margin: 0 auto;
     padding: 2rem; */
     text-align: center;
-    /* background-color:#F7E9D7; */
+    background-color:#F7E9D7;
+}
+body{
+    background-color:#F7E9D7;
+}
+.slide-tabs-container{
+    background-color:#F7E9D7;
 }
 button.linkbtn{
     background-color:#F7E9D7;

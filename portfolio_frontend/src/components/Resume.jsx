@@ -1,7 +1,12 @@
+import React from 'react';
 import { Link } from "react-router-dom"
 import './Resume.css'
 
 const Resume = () => {
+
+  const handlePrint = () => {
+    window.print();
+};
 
     return (
       <div className="Resume">
@@ -9,7 +14,7 @@ const Resume = () => {
         <h1 className="ResumeH1">Megan Masburn</h1>
         <p>Address: Atlanta, GA / <b>Open to Relocate</b></p>
       </header>
-
+      <button onClick={handlePrint} className="print-button">Print Resume</button>
       <section className="Contact-section">
         <h2 className="ResumeH2">Contact:</h2>
         <div className="Contact-box">
@@ -46,7 +51,7 @@ const Resume = () => {
 <h5 className="ResumeH4"><span className="location-font-weight">Key Features:</span></h5>
 <ul>
     <li>Enhanced user experience with animations using Framer Motion, adding engaging transitions and effects to components.</li>
-    <li>Incorpoarted a contact form for easy communication using EmailJS, utilizing backend APIs for form submission.</li>
+    <li>Incorporated a contact form for easy communication using EmailJS, utilizing backend APIs for form submission.</li>
     <li>Utilized React Router for smooth navigation between different sections of the portfolio, including About, Projects, and Contact pages.</li>
 </ul>
 </div>
@@ -72,7 +77,7 @@ const Resume = () => {
 <ul>
     <li>Integrated secure user authentication and authorization, including registration, login/logout functionality, and user profiles.</li>
     <li>Designed with scalability in mind, allowing for potential integration with maps, user reviews, and enhanced search features.</li>
-    <li>Implented fratures that allow users to mark their favorite places and bookmark locations for future reference, enhancing the exploration experience.</li>
+    <li>Implemented features that allow users to mark their favorite places and bookmark locations for future reference, enhancing the exploration experience.</li>
 </ul>
 <h5 className="ResumeH4"><span className="location-font-weight">Link: <a href="https://github.com/MyCloudAtl/New-XploreATL.git"target="_blank">XploreATL</a></span></h5>
 </div>
@@ -150,9 +155,9 @@ const Resume = () => {
         <div className="Resume-item">
           <h3 className="ResumeH3">Full-Stack Software Engineering Certification <span className="font-weight-normal">Graduated: July 2024</span></h3>
           <p> - General Assembly, USA</p>
-          <h3 className="ResumeH3">Pre-Medicine <span className="font-weight-normal">2011 - 2014</span></h3>
+          <h4 className="ResumeH3">Pre-Medicine <span className="font-weight-normal">2011 - 2014</span></h4>
           <p> - Cleveland State Community College, Cleveland,TN</p>
-          <h3 className="ResumeH3">High School Diploma (Dual Honor Student) <span className="font-weight-normal">Graduated: May 2010</span></h3>
+          <h4 className="ResumeH3">High School Diploma (Dual Honor Student) <span className="font-weight-normal">Graduated: May 2010</span></h4>
           <p> - Fannin County High School, Blue Ridge, GA</p>
         </div>
       </section>
