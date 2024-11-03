@@ -5,6 +5,7 @@ import Projects from './Projects'
 import Technology from './Technology'
 import myImage from '../assets/mak-UUmKahgqBSg-unsplash.jpg';
 import Resume from './Resume'
+import Book from './Book';
 
 const Home = () => {
     const [modalShow, setModalShow] = useState(false)
@@ -28,10 +29,11 @@ const Home = () => {
             />
         <div className="Content" style={{ position: 'relative', zIndex: 1, padding: '2rem' }}>
             <div className="Header">
-                <h1>Welcome! Let's get acquainted</h1>
+                {/* <h1>Welcome! Let's get acquainted</h1> */}
                 <h2>Megan Mashburn</h2>
-                <h2 className="Title">Full-Stack Developer</h2>
-        </div>
+                <h3 className="Title">Full-Stack Developer</h3>
+            </div>
+            <Book />
         <img src={MyPic} alt="Megan Mashburn" style={{ width: '200px', height: '200px' }} />
         <p>Hello, it's a pleasure to meet you! My name is Megan Mashburn, and I'm a passionate Full-Stack Software Engineer. 
           I have a tenacious personality and a passion for creating elegant solutions to solve complex problems. 
@@ -54,6 +56,10 @@ const Home = () => {
           </section>
       </div>
       </div>
+
+      //work experience websites
+      //gracehoperconference
+      //leetcode
     )
   }
 export default Home  

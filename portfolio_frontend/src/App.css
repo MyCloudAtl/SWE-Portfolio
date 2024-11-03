@@ -48,18 +48,24 @@ h1{
   margin-top: 0px;
   margin-bottom: 5px;
   font-family: "Parisienne", cursive;
-}
-h2{
-  /* color: #F06161; */
-  text-shadow: #F06161 1px 0 10px;
-  margin-top: 5px;
-  font-family: "Great Vibes", serif;
+  /* background-color: #888; */
 }
 .Header{
+  display: flex;
   font-size: xxx-large;
   font-family: "Inspiration", cursive;
+
+  h2{
+    display: flex;
+    background-color: black;
+    font-size: 2.5em;
+    text-shadow: yellow 1px 0 10px;
+    font-family: "Great Vibes", serif;
+  }
 }
 .Title{
+  display: flex;
+  background-color: yellow;
   font-size: xx-large;
   font-family: "Kaushan Script", cursive;
 }
