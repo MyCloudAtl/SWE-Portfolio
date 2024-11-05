@@ -8,6 +8,7 @@ import Navbar from './components/Navbar'
 import Projects from './components/Projects'
 import Resume from './components/Resume'
 import Technology from './components/Technology'
+import AboutMe from './components/AboutMe'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Navbar onContactClick={handleShowModal} />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/AboutMe" element={<AboutMe />} />
         <Route path="/Technology" element={<Technology />} />
         <Route path="/Projects" element={<Projects />} />
         <Route path="/Resume" element={<Resume />} />

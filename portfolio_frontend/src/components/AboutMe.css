@@ -1,0 +1,67 @@
+.about {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden; /* Prevent scrolling of the about section */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    height: 100%; 
+    overflow-y: auto;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 !important;
+}
+
+.column img {
+    margin-top: 1px;
+    opacity: 0.7;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+}
+
+.bg-text {
+    position: absolute; /* fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border: thick double #ffffff;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    max-width: 60% !important;  
+    font-family: "Wittgenstein", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
