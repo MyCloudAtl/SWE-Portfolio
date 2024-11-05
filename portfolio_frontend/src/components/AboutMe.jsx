@@ -26,16 +26,15 @@ const AboutMe = () => {
                     <img src={Gibbs} alt="Gibbs" />
                 </div>
                 <div className="bg-text">
-                Hello, it's a pleasure to meet you! My name is Megan Mashburn, and I'm a passionate Full-Stack Software Engineer. 
-                    I have a tenacious personality and a passion for creating elegant solutions to solve complex problems. 
-                 Recently, I completed a demanding Software Engineering Immersive Program with General Assembly, where I grew and developed skills in HTML, CSS, Javascript, React, Django, SQL, and Python. 
-                 My previous professional development has helped me build strong communication skills and the skill to prioritize tasks based on their importance. 
-                My desire for constant growth and new challenges inspired me to embark on this career change, and I am excited to contribute my skills to a dynamic team.
-                 Outside of work, I bring a team-oriented mindset from my 14 years of playing soccer, where I cherished the camaraderie of being a varsity player. 
-                 I find joy in the little things, like the beautiful sky on a sunny day—my favorite color is yellow, which reflects my optimistic outlook on life. 
+                    <h2 id="AMheader">My Journey</h2>
+                Hello, it's a pleasure to meet you! My name is Megan Mashburn, and I'm a passionate Full-Stack Software Engineer. I have a tenacious personality and a passion for creating elegant solutions to solve complex problems. 
+                My desire for constant growth and new challenges inspired me to embark on a career change, and I am excited to contribute my skills to a dynamic team.
+                Recently, I completed a demanding Software Engineering Immersive Program with General Assembly, where I grew and developed skills in HTML, CSS, Javascript, React, Django, SQL, and Python. 
+                My previous professional development has helped me build strong communication skills and the skill to prioritize tasks based on their importance. 
+                <br></br>Outside of work I find joy in the little things, like a beautiful sky on a sunny day. my favorite color is yellow, which reflects my optimistic outlook on life. 
                     I owe my journey into tech to my boyfriend, who recognized my eagerness to learn and encouraged me to pursue this path.
-                   A perfect day for me includes nice weather spent with loved ones and my dog, enjoying the simple pleasures in life. I particularly love winter—not just for the gift-giving season, but for the warm, beautiful lights and the overall spirit of love and joy that fills the air.
-                     I believe I would be a valuable asset to any company, one that you can cultivate and grow alongside. Thank you for taking the time to learn about my journey! Please feel free to reach out via email or call me directly at (706) 455-7075 if you have any questions.
+                   I enjoy nice weather spent with loved ones and my dog, enjoying the simple pleasures in life. I particularly love winter—not just for the gift-giving season, but for the warm, beautiful lights and the overall spirit of love and joy that fills the air.
+                     I believe I would be a valuable asset to any company, one that you can cultivate and grow alongside. Thank you for taking the time to learn about my journey! 
                 </div>
                 <div className="column">
                     <img src={Boop} alt="Boop" />

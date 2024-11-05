@@ -17,6 +17,11 @@
     height: 100%; 
     overflow-y: auto;
 }
+#AMheader{
+    font-family: "Inspiration", cursive;
+    font-weight: 900;
+    font-size: 80px;
+}
 
 .column {
     flex: 25%;
