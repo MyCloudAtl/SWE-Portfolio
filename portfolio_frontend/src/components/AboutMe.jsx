@@ -27,14 +27,13 @@ const AboutMe = () => {
                 </div>
                 <div className="bg-text">
                     <h2 id="AMheader">My Journey</h2>
-                Hello, it's a pleasure to meet you! My name is Megan Mashburn, and I'm a passionate Full-Stack Software Engineer. I have a tenacious personality and a passion for creating elegant solutions to solve complex problems. 
-                My desire for constant growth and new challenges inspired me to embark on a career change, and I am excited to contribute my skills to a dynamic team.
-                Recently, I completed a demanding Software Engineering Immersive Program with General Assembly, where I grew and developed skills in HTML, CSS, Javascript, React, Django, SQL, and Python. 
-                My previous professional development has helped me build strong communication skills and the skill to prioritize tasks based on their importance. 
-                <br></br>Outside of work I find joy in the little things, like a beautiful sky on a sunny day. my favorite color is yellow, which reflects my optimistic outlook on life. 
-                    I owe my journey into tech to my boyfriend, who recognized my eagerness to learn and encouraged me to pursue this path.
-                   I enjoy nice weather spent with loved ones and my dog, enjoying the simple pleasures in life. I particularly love winter—not just for the gift-giving season, but for the warm, beautiful lights and the overall spirit of love and joy that fills the air.
-                     I believe I would be a valuable asset to any company, one that you can cultivate and grow alongside. Thank you for taking the time to learn about my journey! 
+                    <h3><b><u>Hello, it's a pleasure to meet you!</u></b></h3>
+                    <p>My name is Megan Mashburn, and I'm a passionate Full-Stack Software Engineer. I have a tenacious personality and a genuine passion for solving complex problems. Driven by my desire for continuous growth, I made the exciting decision to transition into the tech industry. </p>
+                    <p>Recently, I completed an intensive Software Engineering Immersive Program with General Assembly, where I gained hands-on experience in HTML, CSS, Javascript, React, Django, SQL, and Python. Through the program, I enhanced my technical skills, sharpened my communication abilities, and improved my capacity to prioritize tasks effectively.</p>
+                    <p>I’ve always had an optimistic outlook on life, believing that every day brings a new opportunity to learn and that every experience is a teachable moment. I appreciate the simple pleasures in life - nice weather on a beautiful day, connecting with new people, and trekking through nature with my dog.</p>
+                    <p>If you ask me about my favorite time of year, I’ll tell you it’s winter. There’s something so special about the crisp air, the warmth of the twinkling lights, and joyful decorations everywhere.</p>
+                    <p>My partner has always been a source of encouragement, motivating me to push my boundaries and embrace new challenges. This desire for personal growth, combined with my endless curiosity, has led me to pursue a career in tech. </p>
+                    <p>I am confident I would be a valuable contributor to any team with the potential for endless growth. Thank you for taking the time to learn about me and my journey thus far!</p>
                 </div>
                 <div className="column">
                     <img src={Boop} alt="Boop" />

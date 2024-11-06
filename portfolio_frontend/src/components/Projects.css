@@ -10,7 +10,7 @@
 }
 .main-container{
     /* background-color:#F7E9D7 !important; */
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 /* .slide-tabs-container{
     background-color:#F7E9D7;
@@ -29,6 +29,10 @@ button.linkbtn{
 }
 .ProjectsH1{
     color: #FFF6EA;
+    text-shadow: #b08968 5px 0 10px;
+    border-radius: 50%;
+    border: thick double #ffffff;
+    background-color: #b088683d;
     font-size:150px;
     /* font-size: xxx-large; */
     font-family: "Inspiration", cursive;
@@ -39,8 +43,10 @@ button.linkbtn{
     margin-bottom: 3px;
     font-size: xx-large;
     font-family: "Kaushan Script", cursive;
-    color: #EBD8C3;
-    text-shadow: none;
+    color: #FFF6EA;
+    text-shadow: #602437 5px 0 10px,
+    2px 2px 0px #b08968,
+    3px 3px 0px  #b08968;
 }
 .ProjectsRTNHome {
     display: flex;

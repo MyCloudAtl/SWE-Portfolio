@@ -251,6 +251,63 @@
         transform: rotate(360deg);
     }
 }
+
+
+/* Technology List Container Styling */
+.tech-stack-container {
+    padding: 2rem;
+    background-color: #cae2d2;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px black;
+    max-width: 80%;
+    margin: 1rem auto;
+  }
+  
+  .tech-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .tech-list li {
+    flex: 1 1 calc(50% - 20px);
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    color: #333;
+    transition: transform 0.3s ease;
+  }
+  
+  .tech-list li:hover {
+    transform: scale(1.05);
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .github-link {
+    display: inline-block;
+    /* margin-top: 20px; */
+    text-decoration: none;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .github-link:hover {
+    transform: scale(1.1);
+  }
+  
+  .github-link img {
+    border-radius: 50%;
+  }
+  
+  @media (max-width: 768px) {
+    .tech-stack-container {
+      max-width: 90%;
+    }
+    .tech-list li {
+      font-size: 1rem;
+    }
+  }
   
 
 

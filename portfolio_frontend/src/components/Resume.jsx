@@ -1,20 +1,14 @@
 import React, {useState} from 'react';
 import { Link } from "react-router-dom"
 import './Resume.css'
-import Contact from './Contact'
-import Navbar from './Navbar';
 
 const Resume = () => {
-  const [modalShow, setModalShow] = useState(false)
-  const handleShowModal = () => setModalShow(true)
   const handlePrint = () => {
     window.print();
 };
 
     return (
       <div className="Resume">
-        <Navbar onContactClick={handleShowModal} />
-        <Contact modalShow={modalShow} setModalShow={setModalShow} />
            <header className="Resume-header">
         <h1 className="ResumeH1">Megan Masburn</h1>
         <p>Address: Atlanta, GA / <b>Open to Relocate</b></p>

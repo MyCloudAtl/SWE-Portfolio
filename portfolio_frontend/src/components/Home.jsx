@@ -31,11 +31,10 @@ const Home = () => {
                     zIndex: 0,
                 }}
             />
-        <div className="Content" style={{ position: 'relative', zIndex: 1, padding: '2rem' }}>
+        <div className="Content" style={{ position: 'relative', zIndex: 1, padding: '4rem',paddingTop: "0" }}>
             <div className="Header">
                 {/* <h1>Welcome! Let's get acquainted</h1> */}
                 <h2>Megan Mashburn</h2>
-                <h3 className="Title">Full-Stack Developer</h3>
             </div>
           <section id="aboutme">
             <AboutMe />

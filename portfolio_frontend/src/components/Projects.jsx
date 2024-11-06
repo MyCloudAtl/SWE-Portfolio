@@ -10,17 +10,11 @@ import welcomexatl from '/Users/meganmashburn/code/ga/labs/my-portfolio/portfoli
 import pagexatl from '/Users/meganmashburn/code/ga/labs/my-portfolio/portfolio/src/assets/PageXATL.png'
 import mainxatl from '/Users/meganmashburn/code/ga/labs/my-portfolio/portfolio/src/assets/MainXATL.png'
 import saas from '/Users/meganmashburn/code/ga/labs/my-portfolio/portfolio/src/assets/Saas.png'
-import Contact from './Contact'
-import Navbar from './Navbar';
 
 const Projects = () => {
-    const [modalShow, setModalShow] = useState(false)
-    const handleShowModal = () => setModalShow(true)
     document.documentElement.style.setProperty('#root', '#F7E9D7');
     return (
         <div className="Projects">
-            <Navbar onContactClick={handleShowModal} />
-            <Contact modalShow={modalShow} setModalShow={setModalShow} />
           <header className="Projects-header">
               <h1 className="ProjectsH1">Projects:</h1>
           </header>

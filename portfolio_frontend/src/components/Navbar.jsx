@@ -28,11 +28,11 @@ const SlideTabs = ({ onContactClick }) => {
       }}
       className="slide-tabs"
     >
-      <Tab setPosition={setPosition} to="/">Home</Tab>
-      <Tab setPosition={setPosition} to="/Technology">Technology</Tab>
-      <Tab setPosition={setPosition} to="/Projects">Projects</Tab>
-      <Tab setPosition={setPosition} to="/Resume">Resume</Tab>
-      <Tab setPosition={setPosition} to="/Challenger">Challenger</Tab>
+      <Tab setPosition={setPosition} to="#home">Home</Tab>
+      <Tab setPosition={setPosition} to="#technologies">Technology</Tab>
+      <Tab setPosition={setPosition} to="#projects">Projects</Tab>
+      <Tab setPosition={setPosition} to="#resume">Resume</Tab>
+      <Tab setPosition={setPosition} to="#challenger">Challenger</Tab>
       <Tab setPosition={setPosition} onClick={onContactClick} isButton>Contact</Tab>
       <Cursor position={position} />
     </ul>
@@ -63,9 +63,9 @@ const SlideTabs = ({ onContactClick }) => {
           {children}
         </button>
       ) : (
-        <Link to={to}>
+        <a href={to}>
           {children}
-        </Link>
+        </a>
         )}
       </li>
     );
