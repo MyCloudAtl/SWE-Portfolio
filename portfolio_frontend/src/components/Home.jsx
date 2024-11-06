@@ -1,4 +1,4 @@
-import React, { useState} from 'react'
+import React, {useState} from 'react'
 import '/src/App.css'
 import Projects from './Projects'
 import Technology from './Technology'
@@ -6,19 +6,23 @@ import myImage from '../assets/mak-UUmKahgqBSg-unsplash.jpg';
 import Resume from './Resume'
 import AboutMe from './AboutMe'
 import Contact from './Contact'
+import Navbar from './Navbar';
 
 const Home = () => {
     const [modalShow, setModalShow] = useState(false)
     const handleShowModal = () => setModalShow(true)
 
     return (
-      <div className="Main" style={{ position: 'relative'}}>
+      <div className="Main" style={{ position: 'relative', minHeight: '100%'}}>
+        <Navbar onContactClick={handleShowModal} />
+        <Contact modalShow={modalShow} setModalShow={setModalShow} />
             <div
                 style={{
                     backgroundImage: `url(${myImage})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
-                    position: 'absolute',
+                    backgroundRepeat: 'no-repeat',
+                    position:'absolute',
                     top: 0,
                     left: 0,
                     right: 0,

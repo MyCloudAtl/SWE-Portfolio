@@ -17,9 +17,8 @@ function App() {
 
   return (
     <div className="main-container">
-      <Navbar onContactClick={handleShowModal} />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home onContactClick={handleShowModal}/>} />
         <Route path="/AboutMe" element={<AboutMe />} />
         <Route path="/Technology" element={<Technology />} />
         <Route path="/Projects" element={<Projects />} />

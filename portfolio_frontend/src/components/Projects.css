@@ -1,6 +1,6 @@
 #root {
     max-width: 100%;
-    padding: 2rem 0;
+    padding: 0;
     margin: 0 auto;
     /* max-width: 1280px;
     margin: 0 auto;
@@ -8,8 +8,9 @@
     text-align: center;
     /* background-color:#F7E9D7; */
 }
-body{
-    background-color:#F7E9D7 !important;
+.main-container{
+    /* background-color:#F7E9D7 !important; */
+    padding: 1rem;
 }
 /* .slide-tabs-container{
     background-color:#F7E9D7;

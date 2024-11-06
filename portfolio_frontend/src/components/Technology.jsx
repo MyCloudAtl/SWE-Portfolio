@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import "./Technology.css";
 import ReactLogo from '../assets/TechImages/React.png';
 import HTML5 from '../assets/TechImages/Html.png';
@@ -11,10 +11,15 @@ import Django from '../assets/TechImages/Django.png';
 import MongoDB from '../assets/TechImages/MongoDB.png';
 import Python from '../assets/TechImages/Python.png';
 import Navbar from "../components/Navbar";
+import Contact from './Contact'
 
 const Technology = () => {
+  const [modalShow, setModalShow] = useState(false)
+    const handleShowModal = () => setModalShow(true)
   return (
     <div className="technologies">
+      <Navbar onContactClick={handleShowModal} />
+      <Contact modalShow={modalShow} setModalShow={setModalShow} />
       <h1 id='techh1'>Technologies</h1>
       <div className="orbit-container">
         <div className="frontend">Technology</div>

@@ -2,7 +2,7 @@
     color:black;
     background-color: #88b5bf3a;
     max-width: 100%;
-    padding: 0 10px;
+    padding: 10px;
     margin: 0 auto;
     text-align: left;
     font-size: 10pt;
@@ -10,6 +10,9 @@
     p {
         margin-bottom: 5px;
     }
+}
+a{
+    font-size: 16px;
 }
 .font-weight-normal {
     font-weight: normal;
