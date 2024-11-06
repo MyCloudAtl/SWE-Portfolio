@@ -127,7 +127,7 @@ const Technology = () => {
     <li>Figma</li>
   </ul>
 
-  <h3><u>Explore my projects and tech stack!</u><span> </span><a href="https://github.com/MyCloudAtl/" className="github-link">
+  <h3>Explore my projects and tech stack! <a href="https://github.com/MyCloudAtl/" className="github-link">
     <img src="../src/assets/TechImages/Github.png" alt="Github-Logo" width="48" /></a></h3>
 </div>
     </div>

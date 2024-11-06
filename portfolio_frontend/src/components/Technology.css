@@ -261,6 +261,19 @@
     box-shadow: 0 4px 6px black;
     max-width: 80%;
     margin: 1rem auto;
+
+    h2{
+        background-color: rgba(91, 8, 8, 0.3);
+      }
+    h3{
+        color:#602437;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    a{
+        margin-left: 7px;
+    }
+    }
   }
   
   .tech-list {
@@ -299,7 +312,6 @@
   .github-link img {
     border-radius: 50%;
   }
-  
   @media (max-width: 768px) {
     .tech-stack-container {
       max-width: 90%;
