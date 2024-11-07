@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import '/src/App.css'
 import Projects from './Projects'
 import Technology from './Technology'
-import myImage from '../assets/mak-UUmKahgqBSg-unsplash.jpg';
+import myImage from '../assets/fall.jpg';
 import Resume from './Resume'
 import AboutMe from './AboutMe'
 import Contact from './Contact'
@@ -22,6 +22,8 @@ const Home = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
+                    height: '100%',
+                    width: '100%',
                     position:'absolute',
                     top: 0,
                     left: 0,
@@ -40,15 +42,15 @@ const Home = () => {
             <AboutMe />
           </section>
           <br/>
-          <section id="projects">
+          <section className="color-container" id="projects">
             <Projects />
           </section>
           <br/>
-          <section id="technologies">
+          <section className="color-container" id="technologies">
             <Technology />
           </section>
           <br/>
-          <section id="resume">
+          <section className="color-container" id="resume">
             <Resume />
           </section>
           <br/>

@@ -1,6 +1,6 @@
 .Resume {
     color:black;
-    background-color: #90dceda0;
+    background-color: #F7E9D7;
     max-width: 100%;
     padding: 20px;
     margin: 0 auto;
@@ -50,7 +50,7 @@ a{
     text-align: center;
 }
 .Contact-box{
-    border: 2px solid #88B5BF;
+    border: 2.5px solid #602437;
     padding-left: 10px;
     padding: 5px;
 }
@@ -60,10 +60,13 @@ p {
     padding-left: 10px;
 }
 .Resume-item {
-    border: 2px solid #F8F6F4;
+    border: 2.5px solid #602437;
     margin-bottom: 3px;
     p {
         margin-bottom: 5px;
+    }
+    ul{
+        margin-top: 8px;
     }
 }
 @media print {

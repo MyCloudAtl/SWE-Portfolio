@@ -17,7 +17,7 @@
   text-align: center;
   color: white;
   font-family: Arial, sans-serif;
-  background-color: #97CBA9;
+  /* background-color: #602437d6; - background color */
 }
 #techh1 {
   color: #02542b;
@@ -140,6 +140,10 @@
     width: 75em;
     height: 75em; 
     animation: orbit 15s linear infinite;
+    img{
+      background-color: #ffffff;
+      border-radius: 50%;
+    }
 }
 .python {
     top: -22em;
