@@ -7,6 +7,7 @@ import Resume from './Resume'
 import AboutMe from './AboutMe'
 import Contact from './Contact'
 import Navbar from './Navbar';
+import Fall from './Fall';
 
 const Home = () => {
     const [modalShow, setModalShow] = useState(false)
@@ -14,6 +15,7 @@ const Home = () => {
 
     return (
       <div className="Main" style={{ position: 'relative', minHeight: '100%'}}>
+        <Fall />
         <Navbar onContactClick={handleShowModal} />
         <Contact modalShow={modalShow} setModalShow={setModalShow} />
             <div

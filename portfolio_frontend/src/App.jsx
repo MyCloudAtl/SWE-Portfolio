@@ -10,6 +10,7 @@ import Resume from './components/Resume'
 import Technology from './components/Technology'
 import AboutMe from './components/AboutMe'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Fall from './components/Fall.jsx'
 
 function App() {
   const [modalShow, setModalShow] = useState(false)
