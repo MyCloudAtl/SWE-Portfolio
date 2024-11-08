@@ -46,7 +46,7 @@
 
 .frontend {
     display: flex;
-    font-weight: Bolder;
+    font-weight: bolder;
     align-items: center;
     justify-content: center;
     position: absolute;
@@ -316,14 +316,16 @@
   .github-link img {
     border-radius: 50%;
   }
-  @media (max-width: 768px) {
+
+@media (max-width: 600px) {
     .tech-stack-container {
-      max-width: 90%;
+        max-width: 100%;
     }
+
     .tech-list li {
-      font-size: 1rem;
+        font-size: 0.8rem;
     }
-  }
-  
+}
+
 
 

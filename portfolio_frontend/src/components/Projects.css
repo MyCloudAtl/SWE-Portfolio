@@ -100,3 +100,40 @@ button.linkbtn{
 .ProjectsItem:hover .ProjectsTextbox {
     opacity: 0;
 }
+@media screen and (max-width: 800px) {
+    .ProjectsH1 {
+        font-size: 100px;  /* Reduce size */
+    }
+    .ProjectsH2 {
+        font-size: 1.5em;  /* Reduce size */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ProjectsH1 {
+        font-size: 80px;
+    }
+
+    .ProjectsH2 {
+        font-size: 1.2em; 
+    }
+
+    .ProjectsItem {
+        width: 100%; 
+    }
+
+    .ProjectsTextbox {
+        width: 90%;
+    }
+
+    .ProjectsBTN {
+        width: 250px;
+        height: 250px;
+    }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        /* object-fit: cover;  */
+       }
+       
+}

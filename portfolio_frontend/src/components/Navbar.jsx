@@ -32,7 +32,7 @@ const SlideTabs = ({ onContactClick }) => {
       <Tab setPosition={setPosition} to="#technologies">Technology</Tab>
       <Tab setPosition={setPosition} to="#projects">Projects</Tab>
       <Tab setPosition={setPosition} to="#resume">Resume</Tab>
-      <Tab setPosition={setPosition} to="#challenger">Challenger</Tab>
+      {/* <Tab setPosition={setPosition} to="#challenger">Challenger</Tab> */}
       <Tab setPosition={setPosition} onClick={onContactClick} isButton>Contact</Tab>
       <Cursor position={position} />
     </ul>

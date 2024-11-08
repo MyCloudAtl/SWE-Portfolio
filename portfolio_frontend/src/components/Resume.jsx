@@ -1,25 +1,30 @@
 import React, {useState} from 'react';
 import { Link } from "react-router-dom"
 import './Resume.css'
+import ResumePDF from '../assets/MMSWE.pdf'
 
 const Resume = () => {
-  const handlePrint = () => {
-    window.print();
-};
 
     return (
       <div className="Resume">
            <header className="Resume-header">
-        <h1 className="ResumeH1">Megan Masburn</h1>
+        <h1 className="ResumeH1">Megan Mashburn</h1>
         <p>Address: Atlanta, GA / <b>Open to Relocate</b></p>
       </header>
-      <button onClick={handlePrint} className="print-button">Print Resume</button>
+      <a href={ResumePDF} download="Megan Mashburn SWE Resume.pdf">
+        <button>Download Resume</button>
+      </a>
+
+      {/* <button onClick={handlePrint} className="print-button">Print Resume</button> */}
       <section className="Contact-section">
         <h2 className="ResumeH2">Contact:</h2>
         <div className="Contact-box">
           <p>Phone: (706) 455-7075 <br/>
-            Send Email: <a href="mailto:megandmashburn@gmail.com">megandmashburn@gmail.com</a><br/>
-            LinkedIn: <a href="linkedin.com/in/megan-mashburn-075598194">linkedin.com/in/MeganMashburn</a></p>
+            Send Email: <a href="mailto:megandmashburn@gmail.com">megandmashburn@gmail.com</a><br/></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/megan-m-075598194" target="_blank" rel="noopener noreferrer">
+          linkedin.com/in/MeganMashburn
+        </a></p>
+
         </div>
       </section>
 
@@ -39,7 +44,8 @@ const Resume = () => {
         <h2 className="ResumeH2">Projects:</h2>
 
         <div className="Resume-item">
-          <h4 className="ResumeH3"><u>Project Title: React Portfolio</u> <span className="font-weight-normal">Sep 2024 - Oct 2024</span></h4>
+          <h4 className="ResumeH3"><u>Project Title: React Portfolio</u></h4>
+          <p className="date">Sep 2024 - Oct 2024</p>
           <h5 className="ResumeH4"><span className="location-font-weight">Technologies Used:</span></h5>
           <ul>
             <li><b>Frontend:</b> Bootstrap, CSS3, HTML5, JavaScript(ES6+), React.js, Vite, React Router, React Hooks (useState, useEffect)</li>
@@ -55,7 +61,8 @@ const Resume = () => {
         </div>
 
         <div className="Resume-item">
-          <h4 className="ResumeH3"><u>Project Title: XploreATL</u> <span className="font-weight-normal">Jul 2024</span></h4>
+          <h4 className="ResumeH3"><u>Project Title: XploreATL</u></h4> 
+          <p className="date">Jul 2024</p>
           <h5 className="ResumeH4"><span className="location-font-weight">Technologies Used:</span></h5>
           <ul>
             <li><b>Frontend:</b> Axios, CSS3, Font Awesome, HTML5, JavaScript(ES6+), Passport(Passport-Local & Passport-local-Mongoose), React.js, React Hooks (useState, useEffect)</li>
@@ -71,7 +78,8 @@ const Resume = () => {
         </div>
 
         <div className="Resume-item">
-          <h4 className="ResumeH3"><u>(Group) Project Title: Health-Fit</u> <span className="font-weight-normal">Jun 2024</span></h4>
+          <h4 className="ResumeH3"><u>(Group) Project Title: Health-Fit</u></h4>
+          <p className="date">Jun 2024</p>
           <h5 className="ResumeH4"><span className="location-font-weight">Technologies Used:</span></h5>
           <ul>
             <li><b>Frontend:</b> Axios, Bootstrap, CSS3(Flexbox/Grid), HTML5, React.js, React-Big-Calendar (Date-fns & DatePicker), React Router</li>
@@ -91,7 +99,8 @@ const Resume = () => {
       <section className="resume-section">
         <h2 className="ResumeH2">Professional Experience:</h2>
         <div className="Resume-item">
-          <h3 className="ResumeH3">Senior Full Desk Account Executive <span className="font-weight-normal">Oct 2022 - Apr 2024</span></h3>
+          <h3 className="ResumeH3">Senior Full Desk Account Executive</h3> 
+            <p className="date">Oct 2022 - Apr 2024</p>
           <h4 className="ResumeH4"><span className="location-font-weight">Tech USA, Sandy Springs, GA</span> </h4>
           <ul>
             <li>Identified potential clients by generating leads and setting meetings to establish new business.</li>
@@ -102,7 +111,8 @@ const Resume = () => {
           </ul>
         </div>
         <div className="Resume-item">
-          <h3 className="ResumeH3">Medical Sales & Optometric Technician <span className="font-weight-normal">July 2016 - Oct 2022</span></h3>
+          <h3 className="ResumeH3">Medical Sales & Optometric Technician</h3> 
+            <p className="date">July 2016 - Oct 2022</p>
           <h4 className="ResumeH4"><span className="location-font-weight">Roswell Eye Clinic, Roswell, GA</span></h4>
           <ul>
             <li>Increased company revenue through strategic sales and marketing efforts.</li>
@@ -111,7 +121,8 @@ const Resume = () => {
           </ul>
         </div>
         <div className="Resume-item">
-          <h3 className="ResumeH3">Executive Assistant <span className="font-weight-normal">Oct 2014 - Oct 2016</span></h3>
+          <h3 className="ResumeH3">Executive Assistant</h3> 
+            <p className="date">Oct 2014 - Oct 2016</p>
           <h4 className="ResumeH4"><span className="location-font-weight">The Reid Ridge Lodge, Blue Ridge, GA</span></h4>
           <ul>
             <li>Managed company database, tracked, analyzed, and reported on sales performance.</li>
@@ -124,12 +135,15 @@ const Resume = () => {
       <section className="resume-section">
         <h2 className="ResumeH2">Education:</h2>
         <div className="Resume-item">
-          <h3 className="ResumeH3">Full-Stack Software Engineering Certification <span className="font-weight-normal">Graduated: July 2024</span></h3>
-          <p> - General Assembly, USA</p>
-          <h4 className="ResumeH3">Pre-Medicine <span className="font-weight-normal">2011 - 2014</span></h4>
-          <p> - Cleveland State Community College, Cleveland,TN</p>
-          <h4 className="ResumeH3">High School Diploma (Dual Honor Student) <span className="font-weight-normal">Graduated: May 2010</span></h4>
-          <p> - Fannin County High School, Blue Ridge, GA</p>
+          <h3 className="ResumeH3">Full-Stack Software Engineering Certification</h3> 
+            <p className="date">Graduated: July 2024</p>
+            <p> - General Assembly, USA</p>
+          <h4 className="ResumeH3">Pre-Medicine</h4> 
+            <p className="date">2011 - 2014</p>
+            <p> - Cleveland State Community College, Cleveland,TN</p>
+          <h4 className="ResumeH3">High School Diploma (Dual Honor Student)</h4> 
+            <p className="date">Graduated: May 2010</p>
+            <p> - Fannin County High School, Blue Ridge, GA</p>
         </div>
       </section>
   
